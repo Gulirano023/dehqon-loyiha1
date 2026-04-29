@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dehqon | Aqlli Qishloq Xo'jaligi Platformasi</title>
+    <meta
+      name="description"
+      content="Dehqon - fermerlar uchun aqlli tavsiyalar, hosil rejalashtirish va bozor narxlari platformasi."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#00e676" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Dehqon" />
+    <meta property="og:title" content="Dehqon — AI Agro Platforma" />
+    <meta property="og:description" content="O'zbekiston fermerlari uchun real ob-havo, kasallik tahlili va bozor narxlari." />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <a class="brand" href="#home" aria-label="Dehqon bosh sahifa">
+          <span class="brand-mark" aria-hidden="true">🌿</span>
+          <span class="brand-text">Dehqon</span>
+        </a>
+        <nav class="menu" id="menu">
+          <a href="#features">Imkoniyatlar</a>
+          <a href="#assistant">AI Maslahat</a>
+          <a href="#alerts">Signallar</a>
+          <a href="#irrigation">Sug'orish</a>
+          <a href="#market">Bozor</a>
+          <a href="#calendar">Kalendar</a>
+          <a href="#region-info">Hudud</a>
+          <a href="#history">Tarix</a>
+          <a href="#pricing">Narxlar</a>
+          <a href="#contact">Aloqa</a>
+        </nav>
+        <button class="menu-btn" id="menuBtn" aria-label="Menyuni ochish">
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="tag">O'zbekiston №1 Agro AI Platformasi</p>
+            <h1>Fermer uchun <span class="highlight">precision</span> qishloq xo'jaligi</h1>
+            <p class="hero-desc">
+              Real ob-havo, kasallik tarixiy profillari va bozor signallari asosida — har kuni, har ekin uchun aniq qarorlar.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#assistant">→ AI maslahat olish</a>
+              <a class="btn btn-outline" href="#features">Imkoniyatlar</a>
+            </div>
+            <div class="stats">
+              <div>
+                <strong class="data-num">1 183</strong>
+                <span>Test o'tkazildi</span>
+              </div>
+              <div>
+                <strong class="data-num">12</strong>
+                <span>Viloyat profili</span>
+              </div>
+              <div>
+                <strong class="data-num">7</strong>
+                <span>Ekin turi</span>
+              </div>
+              <div>
+                <strong class="data-num">100%</strong>
+                <span>Bepul</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card">
+            <h3>◉ Jonli tavsiya · Xorazm / Pomidor</h3>
+            <p class="muted">Aprel · 37°C · Namlik 28%</p>
+            <ul>
+              <li>Tuproq namligi juda past — tomchilatib sug'orishni zudlik bilan boshlang.</li>
+              <li>Kasallik xavfi: YUQORI (Fitoftora) — fungitsid purkang.</li>
+              <li>Bozor trendi: +5.2% o'smoqda — bosqichma-bosqich sotuv tavsiya.</li>
+            </ul>
+            <a class="btn btn-primary wide" href="#assistant">→ O'zingiz uchun tahlil qiling</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section suzani-bg reveal">
+        <div class="container">
+          <p class="section-label">Imkoniyatlar</p>
+          <h2>Bir platformada — hamma narsa</h2>
+          <p class="section-subtitle">Real ob-havo, tarixiy kasallik profillari va bozor signallari birlashgan aqlli tizim.</p>
+          <div class="cards">
+            <article class="card">
+              <div class="card-icon">🤖</div>
+              <h3>AI Agronom</h3>
+              <p>Ekin turi, tuproq holati (pH, NPK) va ob-havoga qarab kalibratsiyalangan shaxsiy tavsiyalar. 7 ta ekin turi.</p>
+            </article>
+            <article class="card">
+              <div class="card-icon">🧬</div>
+              <h3>Kasallik xavfi</h3>
+              <p>O'zbekiston bo'yicha oylik kasallik bosimi tarixi asosida kalibratsiyalangan xavf bahosi va ishonch darajasi.</p>
+            </article>
+            <article class="card">
+              <div class="card-icon">📊</div>
+              <h3>Bozor signallari</h3>
+              <p>14 kunlik dinamik narx tarixi, trend analizi va SMS-tayyor sotuv signallari barcha ekinlar uchun.</p>
+            </article>
+            <article class="card">
+              <div class="card-icon">💧</div>
+              <h3>Sug'orish jadvali</h3>
+              <p>FAO-56 Kc koeffitsientlari va hududiy sug'orish omili asosida 7 kunlik kunlik sug'orish rejasi.</p>
+            </article>
+            <article class="card">
+              <div class="card-icon">🗓️</div>
+              <h3>Ekin kalendarı</h3>
+              <p>Ekish, parvarishlash va yig'im-terim bosqichlari. Joriy va keyingi bosqich avtomatik ajratiladi.</p>
+            </article>
+            <article class="card">
+              <div class="card-icon">🗺️</div>
+              <h3>Hudud tahlili</h3>
+              <p>O'zbekistonning 12 viloyati uchun iqlim profili, asosiy xavflar va tavsiya etiladigan ekinlar.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="assistant" class="section assistant reveal">
+        <div class="container assistant-grid">
+          <div>
+            <p class="section-label">AI Maslahat</p>
+            <h2>Aniq ma'lumot — aniq qaror</h2>
+            <p class="section-subtitle">
+              Hudud, ekin, namlik, harorat, pH va azot darajasini kiriting. Kalibratsiyalangan tahlil bir zumda tayyor.
+            </p>
+            <form id="aiForm" class="form">
+              <label>
+                Hudud
+                <input id="region" type="text" placeholder="Masalan: Xorazm" required />
+              </label>
+              <button id="weatherBtn" class="btn btn-outline weather-btn" type="button">
+                Ob-havoni avtomatik olish
+              </button>
+              <p id="weatherStatus" class="muted weather-status">
+                Hududni kiriting va ob-havo ma'lumotini avtomatik to'ldiring.
+              </p>
+              <label>
+                Ekin turi
+                <select id="crop" required>
+                  <option value="">Tanlang</option>
+                  <option value="bugdoy">Bug'doy</option>
+                  <option value="paxta">Paxta</option>
+                  <option value="pomidor">Pomidor</option>
+                  <option value="bodring">Bodring</option>
+                  <option value="uzum">Uzum</option>
+                  <option value="kartoshka">Kartoshka</option>
+                  <option value="piyoz">Piyoz</option>
+                </select>
+              </label>
+              <label>
+                Tuproq namligi (%)
+                <input id="moisture" type="number" min="0" max="100" placeholder="Masalan: 45" required />
+              </label>
+              <label>
+                Havo harorati (°C)
+                <input id="temperature" type="number" min="-10" max="55" placeholder="Masalan: 32" required />
+              </label>
+
+              <!-- Ixtiyoriy: tuproq holati -->
+              <details class="optional-section">
+                <summary>Tuproq holati (ixtiyoriy)</summary>
+                <div class="optional-fields">
+                  <label>
+                    Tuproq pH darajasi
+                    <input id="ph" type="number" min="3" max="10" step="0.1" placeholder="Masalan: 6.5" />
+                  </label>
+                  <label>
+                    Azot (N) darajasi
+                    <select id="nitrogen">
+                      <option value="">Noma'lum</option>
+                      <option value="low">Past</option>
+                      <option value="medium">Me'yoriy</option>
+                      <option value="high">Yuqori</option>
+                    </select>
+                  </label>
+                </div>
+              </details>
+
+              <button class="btn btn-primary wide" type="submit">
+                AI maslahatni olish
+              </button>
+            </form>
+          </div>
+          <div class="result-box" id="resultBox">
+            <h3>Natija</h3>
+            <p class="muted">Formani to'ldirib, tugmani bosing.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="market" class="section suzani-bg reveal">
+        <div class="container">
+          <p class="section-label">Bozor tahlili</p>
+          <h2>14 kunlik narx trendi</h2>
+          <p class="section-subtitle">Ko'chma o'rtacha (3 kun vs 7 kun) asosida aniq sotuv signali va joriy bozor narxi.</p>
+          <form id="marketForm" class="form">
+            <label>
+              Ekin turi
+              <select id="marketCrop" required>
+                <option value="">Tanlang</option>
+                <option value="bugdoy">Bug'doy</option>
+                <option value="paxta">Paxta</option>
+                <option value="pomidor">Pomidor</option>
+                <option value="bodring">Bodring</option>
+                <option value="uzum">Uzum</option>
+                <option value="kartoshka">Kartoshka</option>
+                <option value="piyoz">Piyoz</option>
+              </select>
+            </label>
+            <button class="btn btn-outline" type="submit">Trendni ko'rish</button>
+          </form>
+          <div id="marketResult" class="market-result-box muted">
+            Ekin turini tanlab trendni tekshiring.
+          </div>
+        </div>
+      </section>
+
+      <!-- Alertlar paneli -->
+      <section id="alerts" class="section section-alt reveal">
+        <div class="container">
+          <div class="alerts-header">
+            <div>
+              <p class="section-label">Avtomatik signallar</p>
+              <h2>Barcha ekinlar bo'yicha narx alertlari</h2>
+            </div>
+            <button id="refreshAlertsBtn" class="btn btn-outline btn-sm">↻ Yangilash</button>
+          </div>
+          <p class="section-subtitle">SMS-tayyor format — sotish, kutish yoki kuzatish bo'yicha real vaqt signallari.</p>
+          <div id="alertsPanel" class="alerts-panel">
+            <p class="muted">Yuklanmoqda...</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sug'orish jadvali -->
+      <section id="irrigation" class="section reveal">
+        <div class="container">
+          <p class="section-label">Precision sug'orish</p>
+          <h2>7 kunlik aqlli sug'orish jadvali</h2>
+          <p class="section-subtitle">FAO-56 Kc koeffitsientlari, hududiy sug'orish omili va kunlik ETc hisob-kitobiga asoslangan.</p>
+          <form id="irrigationForm" class="form form-grid">
+            <label>
+              Ekin turi
+              <select id="irrigCrop" required>
+                <option value="">Tanlang</option>
+                <option value="bugdoy">Bug'doy</option>
+                <option value="paxta">Paxta</option>
+                <option value="pomidor">Pomidor</option>
+                <option value="bodring">Bodring</option>
+                <option value="uzum">Uzum</option>
+                <option value="kartoshka">Kartoshka</option>
+                <option value="piyoz">Piyoz</option>
+              </select>
+            </label>
+            <label>
+              Harorat (°C)
+              <input id="irrigTemp" type="number" min="-10" max="55" placeholder="Masalan: 30" required />
+            </label>
+            <label>
+              Tuproq namligi (%)
+              <input id="irrigMoisture" type="number" min="0" max="100" placeholder="Masalan: 40" required />
+            </label>
+            <label>
+              Viloyat (ixtiyoriy)
+              <input id="irrigRegion" type="text" placeholder="Masalan: Xorazm" />
+            </label>
+            <button class="btn btn-primary" type="submit" style="align-self:flex-end">Jadvalni tuzish</button>
+          </form>
+          <div id="irrigationResult" class="irrigation-result"></div>
+        </div>
+      </section>
+
+      <!-- Kasallik tarix trendi -->
+      <section id="disease-trend" class="section section-alt reveal">
+        <div class="container">
+          <p class="section-label">Kasallik tarixi</p>
+          <h2>Mavsumiy xavf grafigi</h2>
+          <p class="section-subtitle">O'zbekiston bo'yicha tarixiy chiqish ehtimoli va oylik bosim multiplieri. Joriy oy ko'k ramka bilan ajratiladi.</p>
+          <form id="diseaseTrendForm" class="form form-inline">
+            <label>
+              Ekin turi
+              <select id="diseaseTrendCrop" required>
+                <option value="">Tanlang</option>
+                <option value="bugdoy">Bug'doy</option>
+                <option value="paxta">Paxta</option>
+                <option value="pomidor">Pomidor</option>
+                <option value="bodring">Bodring</option>
+                <option value="uzum">Uzum</option>
+                <option value="kartoshka">Kartoshka</option>
+                <option value="piyoz">Piyoz</option>
+              </select>
+            </label>
+            <button class="btn btn-outline" type="submit">Ko'rish</button>
+          </form>
+          <div id="diseaseTrendResult" class="disease-trend-result"></div>
+        </div>
+      </section>
+
+      <!-- Ekin kalendarı -->
+      <section id="calendar" class="section suzani-bg reveal">
+        <div class="container">
+          <p class="section-label">Agrotexnik kalendar</p>
+          <h2>Ekin bosqichlari va muddatlari</h2>
+          <p class="section-subtitle">
+            Ekishdan yig'im-terimgacha barcha bosqichlar. Joriy oy yashil, keyingisi sariq rangi bilan ajratiladi.
+          </p>
+          <form id="calendarForm" class="form form-inline">
+            <label>
+              Ekin turi
+              <select id="calendarCrop" required>
+                <option value="">Tanlang</option>
+                <option value="bugdoy">Bug'doy</option>
+                <option value="paxta">Paxta</option>
+                <option value="pomidor">Pomidor</option>
+                <option value="bodring">Bodring</option>
+                <option value="uzum">Uzum</option>
+                <option value="kartoshka">Kartoshka</option>
+                <option value="piyoz">Piyoz</option>
+              </select>
+            </label>
+            <button class="btn btn-outline" type="submit">Kalendarni ko'rish</button>
+          </form>
+          <div id="calendarResult" class="calendar-result"></div>
+        </div>
+      </section>
+
+      <!-- Hudud ma'lumoti -->
+      <section id="region-info" class="section section-alt reveal">
+        <div class="container">
+          <p class="section-label">Viloyat profili</p>
+          <h2>Iqlim va hudud tahlili</h2>
+          <p class="section-subtitle">
+            12 ta viloyat: iqlim zonasi, yillik yog'in, sug'orish omili, asosiy xavflar va tavsiya etiladigan ekinlar.
+          </p>
+          <form id="regionForm" class="form form-inline">
+            <label>
+              Viloyat nomi
+              <input id="regionInfoInput" type="text" placeholder="Masalan: Xorazm, Samarqand..." />
+            </label>
+            <button class="btn btn-outline" type="submit">Ma'lumotni ko'rish</button>
+          </form>
+          <div id="regionInfoResult" class="region-info-box muted">
+            Viloyat nomini kiriting va iqlim ma'lumotini oling.
+          </div>
+        </div>
+      </section>
+
+      <!-- Fermer paneli: tarix -->
+      <section id="history" class="section reveal">
+        <div class="container">
+          <div class="history-header">
+            <div>
+              <p class="section-label">Fermer paneli</p>
+              <h2>Maslahatlar tarixi</h2>
+            </div>
+            <button id="clearHistoryBtn" class="btn btn-outline btn-sm">✕ Tozalash</button>
+          </div>
+          <p class="section-subtitle">
+            Oxirgi 10 ta maslahat qurilmangizda (localStorage) saqlanadi. Xavf darajasi rangi bilan ko'rsatiladi.
+          </p>
+          <div id="historyList" class="history-list">
+            <p class="muted">Hali maslahat olinmagan.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section section-alt suzani-bg reveal">
+        <div class="container">
+          <p class="section-label">Tarif rejalari</p>
+          <h2>Hamma uchun qulay narx</h2>
+          <p class="section-subtitle">Kichik fermerdan korporativ agro holdingigacha.</p>
+          <div class="cards pricing">
+            <article class="card">
+              <div class="card-icon">🌱</div>
+              <h3>Start</h3>
+              <p class="price">0 so'm</p>
+              <p>Kuniga 3 ta AI tavsiya, asosiy dashboard, bozor trendi.</p>
+            </article>
+            <article class="card featured">
+              <div class="card-icon">⚡</div>
+              <h3>Pro</h3>
+              <p class="price">99 000 so'm<small style="font-size:.55em;font-weight:500">/oy</small></p>
+              <p>Cheksiz tavsiya, sug'orish jadvali, kasallik trendi, SMS alertlar.</p>
+            </article>
+            <article class="card">
+              <div class="card-icon">🏢</div>
+              <h3>Agro Team</h3>
+              <p class="price">Maxsus</p>
+              <p>Ko'p xo'jalik, API integratsiya, maxsus viloyat profillari.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <div class="container footer-row">
+        <div style="display:flex;align-items:center;gap:10px">
+          <span style="font-size:1.2rem">🌿</span>
+          <span style="font-weight:700;color:#dff0e4">Dehqon</span>
+          <span style="color:#567060">— Precision Agriculture Platform</span>
+        </div>
+        <div style="display:flex;gap:24px;align-items:center">
+          <a href="mailto:hello@dehqon.uz">hello@dehqon.uz</a>
+          <span style="color:#567060;font-size:.82rem">© 2026 Dehqon</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Onboarding modal -->
+    <div id="onboarding-overlay" class="hidden" role="dialog" aria-modal="true" aria-label="Xush kelibsiz">
+      <div class="onboard-card">
+        <div class="onboard-header">
+          <div class="onboard-logo">🌿</div>
+          <h2>Dehqon ga xush kelibsiz!</h2>
+          <p>O'zbekiston fermerlari uchun AI asosidagi agro platforma</p>
+        </div>
+        <div class="onboard-steps">
+          <div class="onboard-step">
+            <div class="onboard-step-icon">🤖</div>
+            <div class="onboard-step-text">
+              <strong>AI Maslahat</strong>
+              <span>Hudud, ekin va tuproq ma'lumotini kiriting — bir zumda tavsiya oling</span>
+            </div>
+          </div>
+          <div class="onboard-step">
+            <div class="onboard-step-icon">📊</div>
+            <div class="onboard-step-text">
+              <strong>Bozor trendi</strong>
+              <span>14 kunlik narx tarixi va SMS-tayyor sotuv signali</span>
+            </div>
+          </div>
+          <div class="onboard-step">
+            <div class="onboard-step-icon">💧</div>
+            <div class="onboard-step-text">
+              <strong>Sug'orish jadvali</strong>
+              <span>FAO-56 asosida 7 kunlik kunlik sug'orish rejasi</span>
+            </div>
+          </div>
+          <div class="onboard-step">
+            <div class="onboard-step-icon">⌨️</div>
+            <div class="onboard-step-text">
+              <strong>Tezkor yordam</strong>
+              <span>Barcha klaviatura yorliqlarini ko'rish uchun <kbd>?</kbd> tugmasini bosing</span>
+            </div>
+          </div>
+        </div>
+        <div class="onboard-footer">
+          <label>
+            <input type="checkbox" id="onboardDontShow" />
+            Yana ko'rsatma
+          </label>
+          <button class="btn btn-primary" id="onboardCloseBtn">Boshlash →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Keyboard shortcuts modal -->
+    <div id="shortcuts-modal" class="hidden" role="dialog" aria-modal="true" aria-label="Klaviatura yorliqlari">
+      <div class="shortcuts-card">
+        <h3>⌨️ Klaviatura yorliqlari</h3>
+        <div class="shortcut-row"><span>AI Maslahat bo'limiga o'tish</span><kbd>G</kbd> + <kbd>A</kbd></div>
+        <div class="shortcut-row"><span>Bozor bo'limiga o'tish</span><kbd>G</kbd> + <kbd>M</kbd></div>
+        <div class="shortcut-row"><span>Sug'orish bo'limiga o'tish</span><kbd>G</kbd> + <kbd>I</kbd></div>
+        <div class="shortcut-row"><span>Kalendarni ko'rish</span><kbd>G</kbd> + <kbd>C</kbd></div>
+        <div class="shortcut-row"><span>Tepaga qaytish</span><kbd>Home</kbd></div>
+        <div class="shortcut-row"><span>Alertlarni yangilash</span><kbd>R</kbd></div>
+        <div class="shortcut-row"><span>Bu yordamni ochish/yopish</span><kbd>?</kbd></div>
+        <div class="shortcut-row"><span>Yopish</span><kbd>Esc</kbd></div>
+        <div style="margin-top:16px">
+          <button class="btn btn-outline wide" id="shortcutsCloseBtn">Yopish</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Network badge -->
+    <div id="net-badge"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

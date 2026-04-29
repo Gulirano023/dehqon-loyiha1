@@ -1,0 +1,13 @@
+{
+  "name": "dehqon-app",
+  "version": "1.0.0",
+  "description": "Dehqon frontend + Express backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node tests/riskEngine.test.js && node tests/marketTrends.test.js && node tests/regionAdvice.test.js && node tests/cropCalendar.test.js && node tests/phase3.test.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
