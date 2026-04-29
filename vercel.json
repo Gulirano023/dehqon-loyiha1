@@ -3,7 +3,24 @@
   "builds": [
     {
       "src": "server.js",
-      "use": "@vercel/node"
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": [
+          "index.html",
+          "style.css",
+          "script.js",
+          "manifest.json",
+          "sw.js",
+          "riskEngine.js",
+          "marketTrends.js",
+          "regionAdvice.js",
+          "cropCalendar.js",
+          "diseaseHistory.js",
+          "irrigationSchedule.js",
+          "alertEngine.js",
+          "weatherService.js"
+        ]
+      }
     }
   ],
   "routes": [
