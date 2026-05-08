@@ -10,7 +10,7 @@ const historyList   = document.getElementById("historyList");
 const clearHistoryBtn = document.getElementById("clearHistoryBtn");
 
 const API_BASE_URL =
-  window.location.protocol === "file:" || window.location.port !== "3000"
+  window.location.protocol === "file:"
     ? "http://localhost:3000"
     : "";
 
