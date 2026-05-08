@@ -932,7 +932,8 @@ select option { background: var(--bg-2); }
   box-shadow: var(--shadow-lg), var(--glow-green);
   max-width: 520px;
   width: 100%;
-  overflow: hidden;
+  max-height: 90vh;
+  overflow-y: auto;
   animation: fadeUp .4s .1s ease both;
 }
 .onboard-header {
