@@ -14,13 +14,7 @@ const app  = express();
 const PORT = process.env.PORT || 3000;
 
 app.use((req, res, next) => {
-  const origin = req.headers.origin || "";
-  const isLocal   = /^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin);
-  const isVercel  = origin.endsWith(".vercel.app") || origin.includes("dehqon");
-  if (isLocal || isVercel) {
-    res.setHeader("Access-Control-Allow-Origin", origin);
-    res.setHeader("Vary", "Origin");
-  }
+  res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "GET,POST,OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
   if (req.method === "OPTIONS") return res.sendStatus(204);
