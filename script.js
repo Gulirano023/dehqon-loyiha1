@@ -10,9 +10,9 @@ const historyList   = document.getElementById("historyList");
 const clearHistoryBtn = document.getElementById("clearHistoryBtn");
 
 const API_BASE_URL =
-  window.location.protocol === "file:"
-    ? "http://localhost:3000"
-    : "";
+  (window.location.hostname.includes("vercel.app") || window.location.port === "3000")
+    ? ""
+    : "http://localhost:3000";
 
 const HISTORY_KEY  = "dehqon_history";
 const HISTORY_LIMIT = 10;
