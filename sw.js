@@ -1,5 +1,5 @@
 // Dehqon Service Worker — offline kesh
-const CACHE = "dehqon-v1";
+const CACHE = "dehqon-v2";
 const STATIC = [
   "/",
   "/index.html",
@@ -26,21 +26,10 @@ self.addEventListener("activate", (e) => {
 self.addEventListener("fetch", (e) => {
   const url = new URL(e.request.url);
 
-  // API chaqiruvlari — network first, xato bo'lsa keshdan
-  if (url.pathname.startsWith("/api/")) {
-    e.respondWith(
-      fetch(e.request)
-        .then((res) => {
-          const clone = res.clone();
-          caches.open(CACHE).then((c) => c.put(e.request, clone));
-          return res;
-        })
-        .catch(() => caches.match(e.request))
-    );
-    return;
-  }
+  // API chaqiruvlarini SW orqali o'tkazmaymiz — to'g'ridan-to'g'ri network
+  if (url.pathname.startsWith("/api/")) return;
 
-  // Statik fayllar — kesh first
+  // Statik fayllar — kesh first, yo'q bo'lsa network
   e.respondWith(
     caches.match(e.request).then((cached) => cached || fetch(e.request))
   );
