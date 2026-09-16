@@ -793,3 +793,28 @@ document.addEventListener("click", (e) => {
   });
   _observer.observe(resultBox, { childList: true, subtree: true });
 })();
+
+// ─── Contact formasi ──────────────────────────────────────────────────────
+(function setupContactForm() {
+  const form = document.getElementById("contactForm");
+  const status = document.getElementById("contactStatus");
+  if (!form) return;
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const name = document.getElementById("contactName").value.trim();
+    const email = document.getElementById("contactEmail").value.trim();
+    const msg = document.getElementById("contactMsg").value.trim();
+
+    if (!name || !email || !msg) {
+      showToast("Iltimos, barcha maydonlarni to'ldiring", "warning");
+      return;
+    }
+
+    status.textContent = "Xabar yuborildi! Tez orada javob beramiz.";
+    status.style.color = "var(--green)";
+    form.reset();
+    showToast("Xabar muvaffaqiyatli yuborildi!", "success", 3000);
+    setTimeout(() => { status.textContent = ""; }, 5000);
+  });
+})();

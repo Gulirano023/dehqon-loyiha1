@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="uz">
   <head>
     <meta charset="UTF-8" />
@@ -394,22 +394,51 @@
               <h3>Start</h3>
               <p class="price">0 so'm</p>
               <p>Kuniga 3 ta AI tavsiya, asosiy dashboard, bozor trendi.</p>
+              <a class="btn btn-outline wide" href="#assistant">Bepul boshlash</a>
             </article>
             <article class="card featured">
               <div class="card-icon">⚡</div>
               <h3>Pro</h3>
               <p class="price">99 000 so'm<small style="font-size:.55em;font-weight:500">/oy</small></p>
               <p>Cheksiz tavsiya, sug'orish jadvali, kasallik trendi, SMS alertlar.</p>
+              <a class="btn btn-primary wide" href="#contact">Obuna bo'lish</a>
             </article>
             <article class="card">
               <div class="card-icon">🏢</div>
               <h3>Agro Team</h3>
               <p class="price">Maxsus</p>
               <p>Ko'p xo'jalik, API integratsiya, maxsus viloyat profillari.</p>
+              <a class="btn btn-outline wide" href="#contact">Suhbatlashish</a>
             </article>
           </div>
         </div>
       </section>
+
+      <!-- Aloqa formasi -->
+      <section id="contact-form" class="section reveal">
+        <div class="container">
+          <p class="section-label">Aloqa</p>
+          <h2>Biz bilan bog'laning</h2>
+          <p class="section-subtitle">Savollaringiz bormi? Takliflaringizmi? Xabar yozing — 24 soat ichida javob beramiz.</p>
+          <form id="contactForm" class="form" style="max-width:560px">
+            <label>
+              Ismingiz
+              <input type="text" id="contactName" placeholder="Masalan: Abdulla" required />
+            </label>
+            <label>
+              Email
+              <input type="email" id="contactEmail" placeholder="Masalan: abdulla@gmail.com" required />
+            </label>
+            <label>
+              Xabar
+              <textarea id="contactMsg" rows="4" placeholder="Xabaringizni yozing..." required style="font:inherit;padding:11px 14px;border:1px solid var(--glass-border);border-radius:var(--r-sm);background:var(--bg-2);color:var(--text);resize:vertical;outline:none;width:100%"></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">Yuborish →</button>
+          </form>
+          <p id="contactStatus" class="muted" style="margin-top:10px"></p>
+        </div>
+      </section>
+
     </main>
 
     <footer id="contact" class="footer">
@@ -426,6 +455,44 @@
       </div>
     </footer>
 
+
+    <!-- Onboarding modal -->
+    <div id="onboarding-overlay" class="hidden">
+      <div class="onboard-card">
+        <div class="onboard-header">
+          <div class="onboard-logo">🌿</div>
+          <h2>Dehqon'ga xush kelibsiz!</h2>
+          <p>Aqlli qishloq xo'jaligi platformasi — barchasi bir joyda.</p>
+        </div>
+        <div class="onboard-steps">
+          <div class="onboard-step">
+            <div class="onboard-step-icon">🤖</div>
+            <div class="onboard-step-text">
+              <strong>AI Maslahat oling</strong>
+              <span>Hudud, ekin va ob-havo ma'lumotini kiriting — sun'iy intellekt sizga aniq tavsiya bersin.</span>
+            </div>
+          </div>
+          <div class="onboard-step">
+            <div class="onboard-step-icon">📊</div>
+            <div class="onboard-step-text">
+              <strong>Bozor trendini kuzating</strong>
+              <span>14 kunlik narx dinamikasi va sotuv signallari bilan har doim oldinda bo'ling.</span>
+            </div>
+          </div>
+          <div class="onboard-step">
+            <div class="onboard-step-icon">💧</div>
+            <div class="onboard-step-text">
+              <strong>Sug'orish jadvali</strong>
+              <span>FAO-56 asosida 7 kunlik aniq sug'orish rejasini oling.</span>
+            </div>
+          </div>
+        </div>
+        <div class="onboard-footer">
+          <label><input type="checkbox" id="onboardDontShow" /> Keyingi safar ko'rsatma</label>
+          <button class="btn btn-primary" id="onboardCloseBtn">Boshlash →</button>
+        </div>
+      </div>
+    </div>
 
     <!-- Keyboard shortcuts modal -->
     <div id="shortcuts-modal" class="hidden" role="dialog" aria-modal="true" aria-label="Klaviatura yorliqlari">
