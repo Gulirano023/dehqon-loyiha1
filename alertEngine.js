@@ -82,6 +82,7 @@ function getPriceAlert(crop) {
  * @param {string} riskText - getRiskLevel() / getCalibratedRisk() natijasi
  * @param {string} cropName - Ekin nomi (ko'rsatish uchun)
  */
+
 function getDiseaseAlert(riskText, cropName) {
   const isHigh   = riskText.includes("YUQORI");
   const isMedium = riskText.includes("O'RTA");
