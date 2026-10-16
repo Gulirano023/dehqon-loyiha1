@@ -3,7 +3,6 @@
  * Bozor narxi va kasallik xavfi bo'yicha avtomatik signallar generatsiya qiladi.
  * SMS-tayyor qisqa xabar formati ham taqdim etiladi.
  */
-
 "use strict";
 
 const { analyzeTrend, cropPriceConfig } = require("./marketTrends");
