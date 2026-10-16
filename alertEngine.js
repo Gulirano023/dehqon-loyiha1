@@ -21,6 +21,7 @@ const RISK_ALERT_LEVELS = {
   PAST:   "info",
 };
 
+
 /**
  * Berilgan ekin uchun bozor narx alertini generatsiya qiladi.
  */
