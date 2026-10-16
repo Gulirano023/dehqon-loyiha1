@@ -95,6 +95,7 @@ function getDiseaseAlert(riskText, cropName) {
       action:  "Zudlik bilan fungitsid purkang va agronomb bilan maslahatlashing.",
       smsText: `[Dehqon] OGOHLANTIRISH: ${cropName} kasallik xavfi YUQORI! Fungitsid purkashni boshlang.`,
     };
+    
   }
   if (isMedium) {
     return {
