@@ -9,7 +9,7 @@ const { analyzeTrend, cropPriceConfig } = require("./marketTrends");
 // Narx o'zgarish praglar (%)
 const PRICE_THRESHOLDS = {
   strongBuy:  5,   // +5% → sotish vaqti
-  weakBuy:    2,   // +2% → bosqichma-bosqich sotuv
+  weakBuy:    2,   // +2% → bosqichma-bosqich sotuv.
   weakSell:  -2,   // -2% → kuzatib turing
   strongSell:-5,   // -5% → sotuvni kechiktiring
 };
