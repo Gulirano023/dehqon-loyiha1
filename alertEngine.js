@@ -4,7 +4,6 @@
  * SMS-tayyor qisqa xabar formati ham taqdim etiladi.
  */
 "use strict";
-
 const { analyzeTrend, cropPriceConfig } = require("./marketTrends");
 
 // Narx o'zgarish praglar (%)
