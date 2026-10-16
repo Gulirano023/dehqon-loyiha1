@@ -14,7 +14,6 @@ const PRICE_THRESHOLDS = {
   strongSell:-5,   // -5% → sotuvni kechiktiring
 };
 
-
 // Kasallik xavfi daraja → alert turi
 const RISK_ALERT_LEVELS = {
   YUQORI: "critical",
