@@ -6,7 +6,6 @@
 "use strict";
 const { analyzeTrend, cropPriceConfig } = require("./marketTrends");
 
-
 // Narx o'zgarish praglar (%)
 const PRICE_THRESHOLDS = {
   strongBuy:  5,   // +5% → sotish vaqti
